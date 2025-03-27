@@ -1,4 +1,4 @@
-# Cuda_MDN_LSTM
+# Cuda_GM_LSTM
 
 This model combines a **Long Short-Term Memory (LSTM)** network with a **Mixture Density Network (MDN)** to model the **dynamics and variability of in-situ soil moisture data**.
 
