@@ -1,6 +1,6 @@
 # Cuda_GM_LSTM
 
-This model combines a **Long Short-Term Memory (LSTM)** network with a **Mixture Density Network (MDN)** to model the **dynamics and variability of in-situ soil moisture data**.
+This model combines a **Long Short-Term Memory (LSTM)** network with a **Gaussian Mixture Model (GMM)** to model the **dynamics and variability of in-situ soil moisture data**.
 
 ---
 
@@ -26,7 +26,7 @@ The LSTM is designed to capture **temporal dependencies** in soil moisture time 
 
 ---
 
-### Gaussian Mixture Model (MDN)
+### Gaussian Mixture Model (GMM)
 
 The model outputs a **mixture of Gaussians** to represent variability in soil moisture predictions:
 
@@ -38,7 +38,7 @@ The model outputs a **mixture of Gaussians** to represent variability in soil mo
 
 ## Loss Function: `nll_loss` (Negative Log-Likelihood Loss)
 
-The **Negative Log-Likelihood (NLL)** loss function is used to train the Mixture Density Network (MDN).  
+The **Negative Log-Likelihood (NLL)** loss function is used to train the Gaussian Mixture Model (GMM).  
 The goal is to **maximize the likelihood** of the observed data under the predicted mixture distribution by minimizing the NLL.
 
 ### Steps of the Loss Function:
